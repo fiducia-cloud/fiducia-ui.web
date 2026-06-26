@@ -6,7 +6,9 @@
 > `remote/deployments/fiducia-ui.web` — make changes here, not in that submodule checkout.
 >
 > On disk: source clone `~/codes/fiducia.cloud/fiducia-ui.web` · submodule checkout `~/codes/ores/k8s-cluster/remote/deployments/fiducia-ui.web`.
-<!-- END k8s-cluster-submodule-notice --># fiducia-ui
+<!-- END k8s-cluster-submodule-notice -->
+
+# fiducia-ui
 
 The [Astro](https://astro.build) front-end for **fiducia.cloud** — the marketing
 homepage for Raft-based consensus & coordination as a service.
