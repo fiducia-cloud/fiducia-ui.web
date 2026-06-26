@@ -237,9 +237,10 @@ const terminal = `<span class="tok-cmd">$</span> curl -X POST https://api.fiduci
       <div class="container">
         <div class="section__head">
           <span class="badge">Under the hood</span>
-          <h2>One <span class="gradient-text">Raft</span> core, every guarantee</h2>
-          <p>Every Fiducia operation is a committed entry in a replicated log. That is what turns
-            “probably locked” into “provably locked.”</p>
+          <h2>Many <span class="gradient-text">Raft</span> groups, one guarantee</h2>
+          <p>Every Fiducia operation is a committed entry in its shard’s replicated log. That is
+            what turns “probably locked” into “provably locked” — and what lets the cluster scale
+            out instead of up.</p>
         </div>
 
         <div class="raft">
