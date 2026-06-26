@@ -38,6 +38,42 @@ const services = [
     ],
     icon: 'clock',
   },
+  {
+    name: 'Config KV & Watches',
+    tagline: 'Live config, one source of truth',
+    desc: 'A linearizable, versioned key/value store for configuration and feature flags. Watch a key or prefix and get changes pushed the instant they commit — no polling, no drift.',
+    points: [
+      'Versioned keys with compare-and-swap',
+      'Watch streams for keys & prefixes',
+      'TTL keys with automatic expiry',
+      'A consistent read, every node',
+    ],
+    icon: 'kv',
+  },
+  {
+    name: 'Leader Election',
+    tagline: 'Exactly one active worker',
+    desc: 'Run your own elections on top of Fiducia. Campaign for a named leadership, hold it with a TTL lease, and step down cleanly — with a fencing token to defeat the stale leader you forgot about.',
+    points: [
+      'Campaign, renew & resign semantics',
+      'Fencing tokens against stale leaders',
+      'Lease auto-release on crash',
+      'Observe & watch leadership changes',
+    ],
+    icon: 'flag',
+  },
+  {
+    name: 'Service Discovery',
+    tagline: 'A registry that tells the truth',
+    desc: 'Register service instances with a heartbeat lease and look up only the ones that are actually alive. Crashed instances drop out on their own — no stale endpoints, no manual cleanup.',
+    points: [
+      'TTL-health register & heartbeat',
+      'Live instance lookup by service',
+      'Watch streams for add/remove events',
+      'Metadata & address per instance',
+    ],
+    icon: 'compass',
+  },
 ];
 
 const steps = [
