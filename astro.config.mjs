@@ -1,4 +1,6 @@
 // @ts-check
+// Astro build config for the fiducia.cloud marketing site: static output served
+// by the Rust backend, under the gateway `/fiducia` base path (see comments below).
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
