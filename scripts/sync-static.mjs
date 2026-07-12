@@ -1,3 +1,6 @@
+// Copies the built `dist/` into the sibling fiducia-backend.rs `static/` dir so
+// the Rust backend can serve the site. Run via `npm run sync` after a build;
+// guards against writing outside the workspace. See scripts/README.md.
 import { cp, mkdir, rm, stat } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";

@@ -1,3 +1,5 @@
+// Fast source-contract tests: assert (without a browser) that the landing page,
+// layout, and CSS keep their key marketing content, CTAs, and responsive rules.
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
 import assert from "node:assert/strict";

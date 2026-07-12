@@ -1,3 +1,5 @@
+// Playwright browser E2E: boots `astro preview` and asserts the rendered landing
+// page and custom 404 (title, hero, nav, service cards, CTAs) load error-free.
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { chromium } from "playwright";

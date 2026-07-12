@@ -1,3 +1,5 @@
+/* Global styles for the whole site: navy+purple design tokens, base element
+   styles, shared component classes, and responsive breakpoints. */
 :root {
   color-scheme: dark;
 
