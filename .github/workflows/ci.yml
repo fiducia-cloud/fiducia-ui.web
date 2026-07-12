@@ -1,3 +1,5 @@
+# CI: checks out the repo with its sibling file: deps, then runs contract tests
+# and the Astro build (gating), plus a best-effort browser E2E job.
 name: ci
 on:
   push:
