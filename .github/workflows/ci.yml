@@ -1,5 +1,5 @@
 # CI: checks out the repo with its sibling file: deps, then runs contract tests
-# and the Astro build (gating), plus a best-effort browser E2E job.
+# and the Astro build, plus a browser E2E gate.
 name: ci
 on:
   push:
@@ -42,12 +42,11 @@ jobs:
       - run: npm run build
         working-directory: repo
 
-  # Browser e2e (Playwright/Puppeteer) needs a real Chrome and the sibling
-  # @fiducia/test-config file: dependency, so it is best-effort only.
+  # Browser e2e (Playwright/Puppeteer) uses a real Chrome and the pinned sibling
+  # @fiducia/test-config dependency. Failures block the change.
   browser-e2e:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    continue-on-error: true
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
